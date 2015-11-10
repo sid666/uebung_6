@@ -3,8 +3,8 @@
 ## Teil 1
 
 * Implementieren Sie die bisher vorgestellte Klasse ```Auto```.
-* Schreiben Sie eine neue Klasse ```AutoTester```, in deren ```main```-Methode Sie zwei neue Autos erzeugen und diese jeweils nacheinander drei unterschiedliche Wegstrecken zurücklegen lassen. Verwenden Sie hierzu ```Zufall.getZufallInt(min, max) aus der letzten Vorlesung. 
-Geben Sie nach jeder Wegstrecke die gefahrenen Gesamtkilometer und den Tankinhalt aus.
+* Schreiben Sie eine neue Klasse ```AutoTester```, in deren ```main```-Methode Sie zwei neue Autos erzeugen und diese jeweils nacheinander drei unterschiedliche Wegstrecken zurücklegen lassen. Verwenden Sie hierzu ```Zufall.getZufallInt(min, max)``` aus der letzten Vorlesung.
+* Geben Sie nach jeder Wegstrecke die gefahrenen Gesamtkilometer und den Tankinhalt aus.
 
 
 ## Teil 2
