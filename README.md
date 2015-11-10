@@ -1,13 +1,13 @@
-# Kapitel 5 Übung 2 ("Arrays sortieren")
+# Kapitel 6 Übung in der Vorlesung ("Autos, Fahrer und Wettrennen")
 
-## Übung 2a
+## Teil 1
 
-* Lassen Sie sich von der Klasse Zufall über die Methode ```erzeugeIntArray(...)``` ein Array der Größe 10 geben.
-* Es ist mit zufälligen int-Werten gefüllt.
-* Geben Sie das Array auf der Konsole aus, sortieren Sie es aufsteigend und geben Sie es dann sortiert nochmal aus.
+* Implementieren Sie die bisher vorgestellte Klasse ```Auto```.
+* Schreiben Sie eine neue Klasse ```AutoTester```, in deren ```main```-Methode Sie zwei neue Autos erzeugen und diese jeweils nacheinander drei unterschiedliche Wegstrecken zurücklegen lassen. Verwenden Sie hierzu ```Zufall.getZufallInt(min, max) aus der letzten Vorlesung. 
+Geben Sie nach jeder Wegstrecke die gefahrenen Gesamtkilometer und den Tankinhalt aus.
 
-## Übung 2b
 
-* Erweitern Sie das Programm durch eine Zeitmessung.
-* Verwenden Sie dafür ```System.nanoTime()```, welches den Abstand zu einem fixen, aber nicht näher definierten Zeitpunkt in Nanosekunden liefert – und zwar so präzise,  wie der PC, auf dem das Programm läuft, es ermöglicht.
-* Sortieren Sie größere Arrays mit 100, 1000, 10000 usw. Einträgen und messen Sie die Laufzeiten.
+## Teil 2
+
+* Erweitern Sie die Klasse Auto derart, dass der "Benzinverbrauch pro km" und der "maximale Tankinhalt" ebenfalls Eigenschaften eines Autos sind.
+* Es soll nur solange gefahren werden, wie der Treibstoff reicht. Implementieren Sie folgende Methode, um den Tank aufzufüllen: ```tanken(int liter)``` 
