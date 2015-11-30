@@ -1,32 +1,28 @@
 
-
 public class Auto {
-public double kilometerstand;
-public double tankinhalt = 40;
-public double benzinverbrauch = 0.1;
-public double tanke = 50;
+	public double kilometerstand;
+	public double tankinhalt = 40;
+	public double benzinverbrauch = 0.1;
+	public double tanke = 50;
 
-public void tanken (int liter)	{
+	public void tanken(int liter) {
 
-tankinhalt = tankinhalt + tanke;
-}
+		tankinhalt = tankinhalt + tanke;
+	}
 
-public void fahre (double kilometer){
-	
-	double reichweite = tankinhalt/(benzinverbrauch*100);
-	
-	//reichweite ausrechenen, und dann entschedien ob auto reichweite oder kilometer fahren soll 
+	public void fahre(double kilometer) {
 
-	if (tankinhalt > 0) {
-			kilometerstand = kilometerstand + kilometer;
-			tankinhalt = tankinhalt - (kilometer*benzinverbrauch);		
-		} else if (tankinhalt <= 0)  {
-			System.out.println("PSYYYCH Kein Sprit mehr!");
-		}
+		double reichweite = tankinhalt * (benzinverbrauch * 100);
+
+		System.out.println("reichweite"+reichweite);
 		
-}
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		if (reichweite < kilometer) {
+			kilometer = reichweite;
+		}
+		System.out.println("Kilometer"+kilometer);
+
+		kilometerstand = kilometerstand + kilometer;
+		tankinhalt = tankinhalt - (kilometer * benzinverbrauch);
 
 	}
 

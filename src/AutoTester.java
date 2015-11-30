@@ -9,8 +9,8 @@ public class AutoTester {
 		
 		//int a = Zufall.getZufallInt(1,500);
 		
-		testwagen1.fahre(100000);
-		testwagen1.fahre(100000);
+		testwagen1.fahre(1);
+		testwagen1.fahre(1);
 		//testwagen2.fahre(a);
 		
 		System.out.println(testwagen1.kilometerstand);
